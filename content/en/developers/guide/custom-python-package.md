@@ -2,7 +2,8 @@
 title: Adding a custom Python package to the Agent
 kind: documentation
 aliases:
-- /agent/custom_python_package
+  - /agent/custom_python_package
+  - /agent/faq/custom_python_package
 further_reading:
 - link: "logs/"
   tag: "Documentation"
