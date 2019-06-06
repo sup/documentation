@@ -10,6 +10,8 @@ main:
         url: "getting_started/tracing"
       - name: "Learning Center"
         url: "getting_started/learning_center"
+      - name: "Prometheus/Openmetrics"
+        url: "getting_started/prometheus"
   # TAGGING
   - name: "Tagging"
     url: "tagging/"
@@ -91,6 +93,18 @@ main:
       - name: "Autodiscovery"
         url: "agent/autodiscovery"
         children:
+          - name: "Integrations Templates"
+            url: "agent/autodiscovery/integrations"
+          - name: "Container Identifier"
+            url: "agent/autodiscovery/ad_identifiers"
+          - name: "Template Variables"
+            url: "agent/autodiscovery/template_variables"
+          - name: "Tag Extraction"
+            url: "agent/autodiscovery/tag"
+          - name: "Discovery Management"
+            url: "agent/autodiscovery/management"
+          - name: "Troubleshooting"
+            url: "agent/autodiscovery/troubleshooting"
           - name: "Cluster Checks"
             url: "agent/autodiscovery/clusterchecks"
       - name: "Proxy"
@@ -98,8 +112,6 @@ main:
       ## Upgrade to Agent v6
       - name: "Upgrade to Agent v6"
         url: "agent/faq/upgrade-to-agent-v6"
-      - name: "Prometheus Checks"
-        url: "agent/prometheus"
       # Troubleshooting
       - name: "Troubleshooting"
         url: "agent/troubleshooting/"
@@ -393,12 +405,8 @@ main:
       - name: "Log Collection & Integrations"
         url: "logs/log_collection/"
         children:
-          - name: "AWS"
-            url: "integrations/amazon_web_services/#log-collection"
           - name: "Browser"
             url: "logs/log_collection/javascript/"
-          - name: "Docker"
-            url: "agent/docker/log/"
           - name: "Csharp"
             url: "logs/log_collection/csharp/"
           - name: "Go"
@@ -413,8 +421,6 @@ main:
             url: "logs/log_collection/python/"
           - name: "Ruby"
             url: "logs/log_collection/ruby/"
-
-
           - name: "Other Integrations"
             url: "integrations/#cat-log-collection"
 
