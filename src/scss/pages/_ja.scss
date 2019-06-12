@@ -1,0 +1,57 @@
+/*
+
+The JA characters of the same font seem to take up more space
+so for now this file is to temporarily scale them back down only on ja pages
+
+*/
+
+body.ja {
+
+  //font-family: 'Noto Sans JP', sans-serif;
+
+  .mainnav {
+    .nav-item {
+      .nav-link {
+        font-size: 16px;
+      }
+    }
+  }
+
+  aside.sidenav .sidenav-nav ul li a {
+    font-size:18px;
+  }
+
+  .main {
+    ul, ol, p {
+      font-size: 16px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  h2 {
+	  font-size: 32px;
+  }
+
+  &> header .mainnav li.dropdown:nth-child(1) .dropdown-menu {
+    min-width: 200px;
+  }
+
+  &> header .mainnav li.dropdown:nth-child(4) .dropdown-menu {
+    min-width: 300px;
+  }
+
+  &> header .mainnav .nav-button {
+    a:nth-child(1) {
+      min-width:70px;
+      display:block !important;
+    }
+    a:nth-child(2) {
+      display:none !important;
+    }
+  }
+
+}
